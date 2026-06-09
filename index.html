@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Smart To-Do Manager</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body>
+
+<div class="container">
+
+    <!-- Header -->
+
+    <header>
+        <h1>📋 Smart To-Do Manager</h1>
+        <p>Task 04 - SkillCraft Technology Internship</p>
+    </header>
+
+    <!-- Task Form -->
+
+    <section class="task-form">
+
+        <input
+            type="text"
+            id="task-input"
+            placeholder="Enter Task..."
+        >
+
+        <div class="task-options">
+
+            <input
+                type="date"
+                id="task-date"
+            >
+
+            <input
+                type="time"
+                id="task-time"
+            >
+
+            <select id="task-priority">
+
+                <option value="Low">
+                    Low Priority
+                </option>
+
+                <option value="Medium">
+                    Medium Priority
+                </option>
+
+                <option value="High">
+                    High Priority
+                </option>
+
+            </select>
+
+        </div>
+
+        <button id="add-task-btn">
+            <i class="fas fa-plus"></i>
+            Add Task
+        </button>
+
+    </section>
+
+    <!-- Dashboard -->
+
+    <section class="dashboard">
+
+        <div class="card">
+            <h3>Total</h3>
+            <span id="total-count">0</span>
+        </div>
+
+        <div class="card">
+            <h3>Completed</h3>
+            <span id="completed-count">0</span>
+        </div>
+
+        <div class="card">
+            <h3>Pending</h3>
+            <span id="pending-count">0</span>
+        </div>
+
+    </section>
+
+    <!-- Filters -->
+
+    <section class="filters">
+
+        <button
+            class="filter-btn active"
+            data-filter="all">
+            All
+        </button>
+
+        <button
+            class="filter-btn"
+            data-filter="pending">
+            Pending
+        </button>
+
+        <button
+            class="filter-btn"
+            data-filter="completed">
+            Completed
+        </button>
+
+    </section>
+
+    <!-- Task List -->
+
+    <section>
+
+        <ul id="task-list">
+
+            <!-- Tasks added dynamically -->
+
+        </ul>
+
+    </section>
+
+    <!-- Footer -->
+
+    <footer>
+        <p>
+            Task 04 - To-Do Web App |
+            SkillCraft Technology Internship
+        </p>
+    </footer>
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
